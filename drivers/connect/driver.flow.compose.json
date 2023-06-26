@@ -1,0 +1,235 @@
+{
+	"actions": [
+		{
+			"id": "play",
+			"title": {
+				"en": "Play",
+				"nl": "Speel af",
+				"de": "Play",
+				"fr": "Lire",
+				"it": "Riproduci",
+				"sv": "Spela",
+				"no": "Spill av",
+				"es": "Reproducir",
+				"da": "Afspil"    
+			}
+		},
+		{
+			"id": "pause",
+			"title": {
+				"en": "Pause",
+				"nl": "Pauzeer",
+				"de": "Pause",
+				"fr": "Pause",
+				"it": "Pausa",
+				"sv": "Pausa",
+				"no": "Pause",
+				"es": "Pausa",
+				"da": "Pause"    
+			}
+		},
+		{
+			"id": "prev",
+			"title": {
+				"en": "Previous",
+				"nl": "Vorige",
+				"de": "Zurück",
+				"fr": "Précédent",
+				"it": "Precedente",
+				"sv": "Föregående",
+				"no": "Forrige",
+				"es": "Anterior",
+				"da": "Forrige"    
+			}
+		},
+		{
+			"id": "next",
+			"title": {
+				"en": "Next",
+				"nl": "Volgende",
+				"de": "Weiter",
+				"fr": "Suivant",
+				"it": "Successivo",
+				"sv": "Nästa",
+				"no": "Neste",
+				"es": "Siguiente",
+				"da": "Næste"     
+			}
+		},
+		{
+			"id": "set_shuffle_true",
+			"title": {
+				"en": "Shuffle on",
+				"nl": "Shuffle aan",
+				"de": "Zufallswiedergabe an",
+				"fr": "Aléatoire activée",
+				"it": "Ordine casuale attivato",
+				"sv": "Blanda på",
+				"no": "Tilfeldig rekkefølge på",
+				"es": "Orden aleatorio activado",
+				"da": "Shufflet slået til"    
+			}
+		},
+		{
+			"id": "set_shuffle_false",
+			"title": {
+				"en": "Shuffle off",
+				"nl": "Shuffle uit",
+				"de": "Zufallswiedergabe aus",
+				"fr": "Aléatoire désactivée",
+				"it": "Ordine casuale disattivato",
+				"sv": "Blanda av",
+				"no": "Tilfeldig rekkefølge av",
+				"es": "Orden aleatorio desactivado",
+				"da": "Shuffle slået fra"    
+			}
+		},
+		{
+			"id": "set_repeat",
+			"title": {
+				"en": "Repeat",
+				"de": "Wiederholen",
+				"fr": "Répéter",
+				"it": "Ripeti",
+				"sv": "Upprepa",
+				"no": "Gjenta",
+				"es": "Repetir",
+				"da": "Gentag"    
+			},
+			"args": [
+				{
+					"name": "value",
+					"type": "dropdown",
+					"values": [
+						{
+							"id": "none",
+							"title": {
+								"en": "Off",
+								"nl": "Uit",
+								"de": "Aus",
+								"fr": "Arrêt",
+								"it": "Spegni",
+								"sv": "Av",
+								"no": "Av",
+								"es": "Apagar",
+								"da": "Fra"
+							}
+						},
+						{
+							"id": "track",
+							"title": {
+								"en": "Repeat Track",
+								"de": "Titel wiederholen",
+								"fr": "Répéter le titre",
+								"it": "Ripeti traccia",
+								"sv": "Upprepa spår",
+								"no": "Gjenta spor",
+								"es": "Repetir pista",
+								"da": "Gentag spor"
+							}
+						},
+						{
+							"id": "playlist",
+							"title": {
+								"en": "Repeat Playlist",
+								"de": "Playlist wiederholen",
+								"fr": "Répéter la playlist",
+								"it": "Ripeti playlist",
+								"sv": "Upprepa spellista",
+								"no": "Gjenta spilleliste",
+								"es": "Repetir lista de reproducción",
+								"da": "Gentag afspilningsliste"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+      "id": "volume_set",
+      "title": {
+        "en": "Set volume to",
+        "nl": "Zet volume naar",
+        "de": "Lautstärke setzen auf",
+        "fr": "Mettre le volume sur",
+        "it": "Imposta il volume al",
+        "sv": "Ställ in volymen på",
+        "no": "Sett volumet til",
+        "es": "Configurar el volumen a",
+        "da": "Indstil lydstyrke til"  
+      },
+      "args": [
+				{
+					"name": "volume_set",
+					"type": "range",
+					"min": 0,
+					"max": 1,
+					"step": 0.01,
+					"value": 0.5,
+					"label": "%",
+					"labelMultiplier": 100,
+					"labelDecimals": 0
+				}
+			]
+    },
+		{
+			"id": "set_active",
+			"title": {
+				"en": "Play on this device",
+				"nl": "Speel op dit apparaat"
+			}
+		},
+		{
+			"id": "play_playlist",
+			"title": {
+				"en": "Play a Playlist",
+				"nl": "Speel een Playlist"
+			},
+			"args": [
+				{
+					"name": "playlist",
+					"type": "autocomplete"
+				}
+			]
+		},
+		{
+			"id": "play_track",
+			"title": {
+				"en": "Play a Track",
+				"nl": "Speel een Track"
+			},
+			"args": [
+				{
+					"name": "track",
+					"type": "autocomplete"
+				}
+			]
+		},
+		{
+			"id": "play_artist",
+			"title": {
+				"en": "Play an Artist",
+				"nl": "Speel een Artiest"
+			},
+			"args": [
+				{
+					"name": "artist",
+					"type": "autocomplete"
+				}
+			]
+		},
+		{
+			"id": "play_album",
+			"title": {
+				"en": "Play an Album",
+				"nl": "Speel een Album"
+			},
+			"args": [
+				{
+					"name": "album",
+					"type": "autocomplete"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,405 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.spotify",
+  "brandColor": "#00D768",
+  "name": {
+    "en": "Spotify"
+  },
+  "description": {
+    "en": "Listening is everything"
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "sdk": 3,
+  "version": "5.2.0",
+  "compatibility": ">=5.0.0",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "category": [
+    "music"
+  ],
+  "author": {
+    "name": "Athom B.V.",
+    "email": "support@athom.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Next track",
+          "nl": "Volgende track"
+        },
+        "id": "next_everywhere"
+      },
+      {
+        "title": {
+          "en": "Pause everywhere",
+          "nl": "Pauzeer overal"
+        },
+        "id": "pause_everywhere"
+      },
+      {
+        "title": {
+          "en": "Previous track",
+          "nl": "Vorige track"
+        },
+        "id": "prev_everywhere"
+      },
+      {
+        "id": "play",
+        "title": {
+          "en": "Play",
+          "nl": "Speel af",
+          "de": "Play",
+          "fr": "Lire",
+          "it": "Riproduci",
+          "sv": "Spela",
+          "no": "Spill av",
+          "es": "Reproducir",
+          "da": "Afspil"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "pause",
+        "title": {
+          "en": "Pause",
+          "nl": "Pauzeer",
+          "de": "Pause",
+          "fr": "Pause",
+          "it": "Pausa",
+          "sv": "Pausa",
+          "no": "Pause",
+          "es": "Pausa",
+          "da": "Pause"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "prev",
+        "title": {
+          "en": "Previous",
+          "nl": "Vorige",
+          "de": "Zurück",
+          "fr": "Précédent",
+          "it": "Precedente",
+          "sv": "Föregående",
+          "no": "Forrige",
+          "es": "Anterior",
+          "da": "Forrige"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "next",
+        "title": {
+          "en": "Next",
+          "nl": "Volgende",
+          "de": "Weiter",
+          "fr": "Suivant",
+          "it": "Successivo",
+          "sv": "Nästa",
+          "no": "Neste",
+          "es": "Siguiente",
+          "da": "Næste"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "set_shuffle_true",
+        "title": {
+          "en": "Shuffle on",
+          "nl": "Shuffle aan",
+          "de": "Zufallswiedergabe an",
+          "fr": "Aléatoire activée",
+          "it": "Ordine casuale attivato",
+          "sv": "Blanda på",
+          "no": "Tilfeldig rekkefølge på",
+          "es": "Orden aleatorio activado",
+          "da": "Shufflet slået til"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "set_shuffle_false",
+        "title": {
+          "en": "Shuffle off",
+          "nl": "Shuffle uit",
+          "de": "Zufallswiedergabe aus",
+          "fr": "Aléatoire désactivée",
+          "it": "Ordine casuale disattivato",
+          "sv": "Blanda av",
+          "no": "Tilfeldig rekkefølge av",
+          "es": "Orden aleatorio desactivado",
+          "da": "Shuffle slået fra"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "set_repeat",
+        "title": {
+          "en": "Repeat",
+          "de": "Wiederholen",
+          "fr": "Répéter",
+          "it": "Ripeti",
+          "sv": "Upprepa",
+          "no": "Gjenta",
+          "es": "Repetir",
+          "da": "Gentag"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "none",
+                "title": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus",
+                  "fr": "Arrêt",
+                  "it": "Spegni",
+                  "sv": "Av",
+                  "no": "Av",
+                  "es": "Apagar",
+                  "da": "Fra"
+                }
+              },
+              {
+                "id": "track",
+                "title": {
+                  "en": "Repeat Track",
+                  "de": "Titel wiederholen",
+                  "fr": "Répéter le titre",
+                  "it": "Ripeti traccia",
+                  "sv": "Upprepa spår",
+                  "no": "Gjenta spor",
+                  "es": "Repetir pista",
+                  "da": "Gentag spor"
+                }
+              },
+              {
+                "id": "playlist",
+                "title": {
+                  "en": "Repeat Playlist",
+                  "de": "Playlist wiederholen",
+                  "fr": "Répéter la playlist",
+                  "it": "Ripeti playlist",
+                  "sv": "Upprepa spellista",
+                  "no": "Gjenta spilleliste",
+                  "es": "Repetir lista de reproducción",
+                  "da": "Gentag afspilningsliste"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "volume_set",
+        "title": {
+          "en": "Set volume to",
+          "nl": "Zet volume naar",
+          "de": "Lautstärke setzen auf",
+          "fr": "Mettre le volume sur",
+          "it": "Imposta il volume al",
+          "sv": "Ställ in volymen på",
+          "no": "Sett volumet til",
+          "es": "Configurar el volumen a",
+          "da": "Indstil lydstyrke til"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "volume_set",
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "set_active",
+        "title": {
+          "en": "Play on this device",
+          "nl": "Speel op dit apparaat"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          }
+        ]
+      },
+      {
+        "id": "play_playlist",
+        "title": {
+          "en": "Play a Playlist",
+          "nl": "Speel een Playlist"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "playlist",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "play_track",
+        "title": {
+          "en": "Play a Track",
+          "nl": "Speel een Track"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "track",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "play_artist",
+        "title": {
+          "en": "Play an Artist",
+          "nl": "Speel een Artiest"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "artist",
+            "type": "autocomplete"
+          }
+        ]
+      },
+      {
+        "id": "play_album",
+        "title": {
+          "en": "Play an Album",
+          "nl": "Speel een Album"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=connect"
+          },
+          {
+            "name": "album",
+            "type": "autocomplete"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "images": {
+        "large": "/drivers/connect/assets/images/large.png",
+        "small": "/drivers/connect/assets/images/small.png"
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "name": {
+        "en": "Spotify Connect"
+      },
+      "class": "speaker",
+      "capabilities": [],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "id": "connect"
+    }
+  ]
+}
